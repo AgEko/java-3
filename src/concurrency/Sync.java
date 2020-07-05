@@ -19,13 +19,19 @@ class Sync extends Thread {
             int randInt = rand.nextInt(100);
             this.nums.add(randInt);
         }
+
     }
 
     public static void main(String[] args)  {
         Sync syncThread = new Sync("sync thread");
         syncThread.start();
+        try{
+            sleep(1000);
+            System.out.println(syncThread.nums);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 
-        System.out.println(syncThread.nums);
         //this prints out an empty list. write some code that will allow the data generated in the syncThread to show up  here.  There is a brute force way and a more sophisticated way.  Either or will work, but strive for sophistication :)
 
     }

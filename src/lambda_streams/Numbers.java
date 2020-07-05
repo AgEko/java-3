@@ -7,7 +7,7 @@ class Numbers {
     static List<Integer> nums = Arrays.asList(10,100,1000,5,50,500,3,30,300,7,70,700,1,10,100,25,250,2500);
 
     public static void main(String[] args) {
-        //Part I :complete the static class methods that have been set up in this Numbers class java file.  Use streams to compute the results wheever possible.
+        //Part I :complete the static class methods that have been set up in this Numbers class java file.  Use streams to compute the results where ever possible.
         System.out.println(nums);
 
         //Part II - refactor all of the class methods to accept lambda expressions. You can put the lambda functions directly inside the method calls, or defined them first, then pass them into the methods. give them the same names as the static methods, but add the word 'lambda' in front of every lambda function:
