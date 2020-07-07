@@ -17,7 +17,7 @@ class Reasoning extends  Thread{
         //https://www.geeksforgeeks.org/difference-between-process-and-thread/
 
         //print out you think will happen if you invoke the run() method of a thread as opposed to the start() method of a thread.
-
+        System.out.println("The process will run on the main thread, rather than starting a new thread for said process.");
     }
 
 }
